@@ -1,8 +1,18 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link href="../styles.css" rel="stylesheet" type="text/css">
+    <style>
+        .list-value {
+            font-weight: bold;
+        }
+
+        .italic-font {
+            font-style: italic;
+        }
+    </style>
 </head>
-<body bgcolor="#f5deb3" text="black">
+<body>
 <div>
     <h2>Учеба</h2>
     <p>
@@ -15,19 +25,19 @@
             Также закончил множество курсов в различных компаниях, среди которых:
         </span>
     <ul>
-        <li><b>Mail.ru</b></li>
-        <li><b>DSR Corporation</b></li>
-        <li><b>РЕЛЭКС</b></li>
+        <li><span class=list-value>Mail.ru</span></li>
+        <li><span class="list-value">DSR Corporation</span></li>
+        <li><span class="list-value">РЕЛЭКС</span></li>
     </ul>
     </p>
 </div>
-<hr color="black">
+<hr>
 <div>
     <h2>Работа</h2>
     <p>
-        <span>1 год в IT индустрии. На данный момент работаю в компании</span>
-        <a href="https://www.relex.ru/ru/">РЕЛЭКС</a>.
-        <span>
+        <span class="italic-font">1 год в IT индустрии. На данный момент работаю в компании</span>
+        <a class="italic-font" href="https://www.relex.ru/ru/">РЕЛЭКС</a>.
+        <span class="italic-font">
             Основная сфера деятельности - backend java разработчик. Участвовал в проектах с таким стеком технологий,
             как: JAX-RS, Spring Boot. Имею опыт работы с распределенным брокером сообщений Kafka: занимался подключением
             протоколов безопасности и поддержкой функционала одновременно на нескольких проектах. Знаком с серверами
