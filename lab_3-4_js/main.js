@@ -48,3 +48,11 @@ function moveToVideoPage() {
     window.open('video.html')
     window.close();
 }
+
+function showCurrentDate() {
+    document.getElementById('currentDate').innerHTML = new Date().toLocaleString();
+}
+
+function hideCurrentDate() {
+    document.getElementById('currentDate').innerHTML = 'Наведите, чтобы увидеть текущее время';
+}
