@@ -46,3 +46,4 @@ testem.log
 Thumbs.db
 
 lab_5-8_php/resources/counter.txt
+lab_5-8_php/resources/last_request.txt
