@@ -7,8 +7,11 @@ function isContainsNumbers(value) {
 }
 
 function register() {
-    const formData = new FormData(document.querySelector('form'));
-    validate(formData);
+    let isConfirmed = window.confirm("Вы действительно хотите зарегистрироваться?");
+    if (!isConfirmed) {
+        return;
+    }
+    validate(new FormData(document.querySelector('form')));
 }
 
 function clearForm() {
@@ -30,11 +33,17 @@ function validate(formData) {
     } else if (!isContainsNumbers(password) || !isContainsLetters(password)) {
         window.alert('Пароль должен содержать как буквы, так и цифры');
     } else {
+        clearForm();
         moveToVideoPage();
     }
 }
 
 function moveToDeveloperPage() {
+    let result = window.prompt("Для выполнения запроса решите математическую задачу: Сколько будет 17 + 32");
+    if (result !== 39) {
+        window.alert("Задача решена неправильно.")
+        return;
+    }
     window.open('about-developer.html');
     window.close();
 }
