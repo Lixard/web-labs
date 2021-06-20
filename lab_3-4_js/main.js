@@ -30,8 +30,7 @@ function validate(formData) {
     } else if (!isContainsNumbers(password) || !isContainsLetters(password)) {
         window.alert('Пароль должен содержать как буквы, так и цифры');
     } else {
-        window.alert('Учетная запись успешно зарегистрирована');
-        clearForm();
+        moveToVideoPage();
     }
 }
 
@@ -42,5 +41,10 @@ function moveToDeveloperPage() {
 
 function moveToRegistrationPage() {
     window.open('main.html');
+    window.close();
+}
+
+function moveToVideoPage() {
+    window.open('video.html')
     window.close();
 }
