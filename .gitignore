@@ -44,3 +44,5 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+lab_5-8_php/resources/counter.txt

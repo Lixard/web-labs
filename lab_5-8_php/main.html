@@ -1,0 +1,83 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Форма регистрации</title>
+    <link href="resources/style.css" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<form action="visual.php" enctype="multipart/form-data" id="form" method="post">
+    <div class="form-group">
+        <label for="surname">Фамилия</label>
+        <input class="form-control" id="surname" name="surname" type="text">
+    </div>
+
+    <div class="form-group">
+        <label for="name">Имя</label>
+        <input class="form-control" id="name" name="name" type="text">
+    </div>
+
+    <div class="form-group">
+        <label for="secondName">Отчество (при наличии)</label>
+        <input class="form-control" id="secondName" name="secondName" type="text">
+    </div>
+
+    <div class="form-group">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" id="genderM" name="gender" type="radio" value="Мужчина">
+            <label class="form-check-label" for="genderM">Мужской</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" id="genderF" name="gender" type="radio" value="Женщина">
+            <label class="form-check-label" for="genderF">Женский</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Адрес электронной почты</label>
+        <input class="form-control" id="email" name="email" type="email">
+    </div>
+
+    <div class="form-group">
+        <label>Увлечения</label>
+        <div class="form-check">
+            <input class="form-check-input" id="sport" name="sport" type="checkbox" value="true">
+            <label class="form-check-label" for="sport">Спорт</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" id="music" name="music" type="checkbox" value="true">
+            <label class="form-check-label" for="music">Музыка</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" id="movie" name="movie" type="checkbox" value="true">
+            <label class="form-check-label" for="movie">Кино</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="presence">Присутствие</label>
+        <select class="form-control" id="presence" name="presence">
+            <option value="Очно">Очно</option>
+            <option value="Дистанционно">Дистанционно</option>
+            <option value="Смешанное">Смешанное</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="description">О себе</label>
+        <textarea class="form-control" cols="30" id="description" name="description" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="inputFile">Загрузить файл</label>
+        <input id="inputFile" name="inputFile" type="file">
+    </div>
+
+    <div class="form-group">
+        <button class="btn btn-primary" type="reset">Очистить</button>
+        <button class="btn btn-primary" type="submit">Зарегистрироваться</button>
+    </div>
+</form>
+</body>
+</html>
